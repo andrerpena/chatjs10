@@ -1,0 +1,9 @@
+C:\Projetos\ChatJs\ChatJs.Net\bin\Release\ChatJs.Net.dll
+C:\Projetos\ChatJs\ChatJs.Net\bin\Release\ChatJs.Net.pdb
+C:\Projetos\ChatJs\ChatJs.Net\bin\Release\System.Web.Http.dll
+C:\Projetos\ChatJs\ChatJs.Net\bin\Release\System.Net.Http.Formatting.dll
+C:\Projetos\ChatJs\ChatJs.Net\bin\Release\System.Web.Http.xml
+C:\Projetos\ChatJs\ChatJs.Net\bin\Release\System.Net.Http.Formatting.xml
+C:\Projetos\ChatJs\ChatJs.Net\obj\Release\ChatJs.Net.csprojResolveAssemblyReference.cache
+C:\Projetos\ChatJs\ChatJs.Net\obj\Release\ChatJs.Net.dll
+C:\Projetos\ChatJs\ChatJs.Net\obj\Release\ChatJs.Net.pdb

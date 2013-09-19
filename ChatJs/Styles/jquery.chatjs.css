@@ -1,0 +1,250 @@
+﻿/**
+ * ChatJS 1.0
+ * www.chatjs.net
+ * 
+ * Copyright (c) 2013, André Pena
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms,
+ * with or without modification, are permitted provided
+ * that the following conditions are met:
+ * 
+ *     - Redistributions of source code must retain the above copyright notice,
+ *       this list of conditions and the following disclaimer.
+ * 
+ *     - The software containing ChatJS must not directly or indirectly charge the
+ *       end user at any plan. Otherwise a commercial license is required.
+ **/
+
+.chat-window {
+    background-color: White;
+    border-color: #A7A7A7;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    bottom: 0;
+    box-shadow: 0 0 10px #D5D5D5;
+    font-family: Arial,Helvetica;
+    font-size: 12px;
+    line-height: 14.4px;
+    position: fixed;
+    width: 230px;
+    z-index: 10000;
+}
+
+    .chat-window .temp-message {
+        color: rgb(176, 176, 176);
+    }
+
+.chat-window-title {
+    background: none repeat scroll 0 0 #EEEEEE;
+    border-bottom: 1px solid #D7D7D7;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 6px;
+    overflow: hidden;
+}
+
+    .chat-window-title .text {
+        margin-top: 1px;
+    }
+
+    .chat-window-title .close {
+        background-image: url("/ChatJs/Images/clear.png");
+        float: right;
+        height: 16px;
+        width: 16px;
+    }
+
+    .chat-window-title.unread {
+        background: none repeat scroll 0 0 white;
+    }
+
+    .chat-window-title.online {
+        background-image: url("/ChatJs/images/chat-online.png");
+        background-position: 8px 10px;
+        background-repeat: no-repeat;
+        padding-left: 22px;
+    }
+
+    .chat-window-title.offline {
+        background-image: url("/ChatJs/images/chat-offline.png");
+        background-position: 8px 10px;
+        background-repeat: no-repeat;
+        padding-left: 22px;
+    }
+
+.chat-window-inner-content {
+    margin-bottom: 2px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+    .chat-window-inner-content .loading-box {
+        padding: 30px;
+
+    }
+
+
+textarea.chat-window-text-box {
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.user-list-item {
+    background-position: 2px center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 5px;
+    overflow: hidden;
+}
+
+    .user-list-item .profile-picture {
+        display: block;
+        float: left;
+        height: 25px;
+        width: 25px;
+    }
+
+    .user-list-item .profile-status {
+        display: block;
+        float: right;
+        height: 7px;
+        margin: 10px 6px 0;
+        width: 7px;
+    }
+
+        .user-list-item .profile-status.online {
+            background-image: url("/ChatJs/images/chat-online.png");
+            background-repeat: no-repeat;
+        }
+
+        .user-list-item .profile-status.offline {
+            background-image: url("/ChatJs/images/chat-offline.png");
+            background-repeat: no-repeat;
+        }
+
+    .user-list-item .content {
+        margin: 7px 22px 0 35px;
+    }
+
+    .user-list-item.offline {
+        background-image: url("/ChatJs/images/chat-offline.png");
+    }
+
+    .user-list-item.online {
+        background-image: url("/ChatJs/images/chat-online.png");
+    }
+
+.user-list-empty {
+    background-position: 2px center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+.chat-window-text-box-wrapper {
+    padding: 2px;
+}
+
+.chat-message {
+    border-bottom: 1px solid #EAEAEA;
+    margin: 0 5px;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+    .chat-message:last-child {
+        border-bottom: none;
+    }
+
+    .chat-message .chat-gravatar-wrapper {
+        float: left;
+    }
+
+    .chat-message .chat-text-wrapper {
+        line-height: 1.2em;
+        margin-left: 40px;
+    }
+
+    .chat-message p {
+        margin: 0;
+    }
+
+.chat-window-content {
+    /*min-height: 100px;*/
+}
+
+    .chat-window-content .message-warning {
+        margin: 0;
+    }
+
+    .chat-window-content .typing-signal {
+        color: gray;
+        margin: 3px 8px;
+    }
+
+    .chat-window-content input[type=text] {
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box; /* Firefox, other Gecko */
+        box-sizing: border-box; /* Opera/IE 8+ */
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        margin: 0;
+        transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        border-radius: 0;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        margin: 0;
+        transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+        height: auto;
+    }
+
+.happy {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/ChatJs/Images/Emoticons/smile-2.png");
+    vertical-align: top;
+}
+
+.very-happy {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/ChatJs/Images/Emoticons/smile-1.png");
+    vertical-align: top;
+}
+
+.sad {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/ChatJs/Images/Emoticons/smile-3.png");
+    vertical-align: top;
+}
+
+.wary {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/ChatJs/Images/Emoticons/smile-4.png");
+    vertical-align: top;
+}
+
+.astonished {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/ChatJs/Images/Emoticons/smile-5.png");
+    vertical-align: top;
+}
+
+.tongue {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("/ChatJs/Images/Emoticons/smile-6.png");
+    vertical-align: top;
+}

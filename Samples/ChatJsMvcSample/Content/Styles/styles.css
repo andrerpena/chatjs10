@@ -1,0 +1,179 @@
+﻿/**
+    * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+    * http://cssreset.com
+    */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.com {
+    color: #93a1a1;
+}
+
+.lit {
+    color: #195f91;
+}
+
+.pun, .opn, .clo {
+    color: #93a1a1;
+}
+
+.fun {
+    color: #dc322f;
+}
+
+.str, .atv {
+    color: #D14;
+}
+
+.kwd, .prettyprint .tag {
+    color: #1e347b;
+}
+
+.typ, .atn, .dec, .var {
+    color: teal;
+}
+
+.pln {
+    color: #48484c;
+}
+
+.hero {
+    background-color: #F0F0F0;
+    background-image: url("/Content/Images/bright_squares.png");
+    background-position: 50% center;
+    border-bottom: 1px solid #E1E1E1;
+    border-top: 3px solid #EBEBEB;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 15px 0 0;
+}
+
+    .hero .hero-text {
+        float: left;
+        text-align: left;
+        width: 500px;
+    }
+
+        .hero .hero-text .callout {
+            margin-left: 20px;
+            margin-top: -15px;
+            position: absolute;
+        }
+
+        .hero .hero-text h1 {
+            margin-top: 30px;
+        }
+
+        .hero .hero-text p.info {
+            margin-bottom: 20px;
+        }
+
+        .hero .hero-text p.github {
+            margin-top: 15px;
+        }
+
+    .hero .screenshot-wrapper {
+        margin: 20px 0 0 620px;
+        width: 500px;
+    }
+
+.green-checks {
+    list-style: none outside none;
+    margin: 18px 0;
+}
+
+    .green-checks li {
+        background-image: url("/Content/Images/green-tick.png");
+        background-position: 0 3px;
+        background-repeat: no-repeat;
+        font-size: 15px;
+        margin-bottom: 10px;
+        padding-left: 35px;
+        padding-top: 2px;
+    }
+
+.bs-docs-example:after {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "Example";
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 3px 7px;
+    position: absolute;
+    top: -1px;
+}
+
+.bs-docs-example {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    padding: 39px 19px 14px;
+    position: relative;
+}
+
+    .bs-docs-example + .prettyprint {
+        margin-top: -20px;
+        padding-top: 15px;
+    }
+
+
+pre.prettyprint {
+    border: 1px solid #DDDDDD;
+    padding: 6px;
+}
+
+footer {
+    color: #666666;
+    font: 14px/100px 'District Thin',helvetica,arial;
+    text-align: center;
+}
